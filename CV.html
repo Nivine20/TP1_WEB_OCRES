@@ -5,52 +5,154 @@
 	<title>CV de Nivine Diallo</title>
 	<!--Style pour repérer les blocs-->
 	<style type="text/css">
-		body main header nav
-		{
-			width: absolute;
-    		height:85px;
-			background-color: #35b8e6;
 
+		/*Style de la balise aside*/
+		header img
+		{
+			margin-left: 115px;
+			width: 170px;
+			height: 250px;
 
 		}
+		aside h1
+		{
+			font-size: 40px;
+			color: grey;
+			text-align: center;
+			line-height: 20%;
+			font-weight: 100;
+		}
+
+		aside h2
+		{
+			color: grey;
+			text-align: center;
+			letter-spacing: 3px;
+			text-decoration : underline;
+		}
+		aside p
+		{
+			font-size: 20px;
+			margin-left: 20px;
+		}
+
 		body aside
 		{
-			width:270px;
-    		height:1300px;
+			width:400px;
+    		height:1305px;
     		background-color:#fdeef5;
     		float: left;
     		font-family: Arial;
+    	}
+
+    	/*Style de la bar de menu*/
 			
+		body main header nav
+		{
+			width: absolute;
+    		height:90px;
+			background-color: #DFDEDE;
 		}
+
 		ul
 		{
 			list-style-type: none;
+			font-size: 25px;
  			margin: 0;
   			padding: 0;
 		}
 
-		li
+		li a
 		{
 			display: block;
+			color: black;
 			float: left;
-			padding: 20px 100px;
+			padding: 30px 146px;
+			text-decoration: none;
+			transition: 0.3s;
 		}
+
+		li a:hover {
+
+			color: grey;
+  			background-color: #fdeef5;
+  			transition: 0.3s;
+		}
+
+		/*Style de la section principale*/
+
 		main section
 		{
 			width: absolute;
 			height: 1214px;
 			padding-top: 1px;
-			background-color: #f0d785;
 		}
-		
+
+		main section h1
+		{
+			font-size: 50px;
+			text-align: center;
+		}
+
+		main section h2
+		{
+			font-size: 40px;
+
+		}
+
+		main section h3
+		{
+			font-size: 30px;
+			font-family: Helvetica;
+
+		}
+
+		.container
+		{
+			text-align: center;
+		}
 	</style>
 </head>
+
 <body>
 
 	<!--Barre latérale qui comporte ma photo, mes informations personnelles et centres d'intérêts-->
 	<aside>
-		<p>Barre latérale comportant infomations</p>
-		
+		<header>
+			<img src="photocv.png">
+		</header>
+		<h1>NIVINE</h1>
+		<h1>DIALLO</h1>
+
+		<h2>Informations</h2>
+		<p>Âge : 21 ans</p>
+		<p>Nationalité : Française</p>
+		<p>Permis B</p>
+		<p>E-mail : nivine.dh@gmail.com</p>
+		<p>Tél : 06.40.40.99.71</p>
+		<p>Adresse : 27, rue des Partants,</p>
+		<p>75020 PARIS</p>
+
+		<h2>Centres d'intérêt</h2>
+			<p style="font-weight: bold">Sports</p>
+			<p>Danse classique et contemporaine</p>
+			<p>Taekwondo</p>
+			<p>Ski</p>
+			<p>Escalade</p>
+			<p>Tennis</p>
+
+			<p style="font-weight: bold">Musique</p>
+			<p>Piano</p>
+			<p>Guitare</p>
+			<p>Solfège (conservatoire)</p>
+
+			<p style="font-weight: bold">Humanitaire</p>
+
+			<p>Association (UPA)</p>
+
+			<p style="font-weight: bold">Astronomie</p>
+
+
 	</aside>
 
 
@@ -59,17 +161,28 @@
 			<!--Barre de menu avec possibilité de naviguer vers la page d'accueil, ma formation, mes expér. pro, mes compétences et le faq pour plus de questions -->
 			<nav>
 				<ul>
-					<a href="Cvhtml.html"> <li>Accueil</li> </a> <!--Page d'accueil-->
-					<a href="formation.html"><li>Formation</li> </a> <!--Page de formation-->
-					<a href="exppro.html"><li>Expériences professionnelles</li> </a> <!--Page d'expériences pro-->
-					<a href="comp.html"><li>Compétences</li> </a> <!--Page de compétences-->
-					<a href="faq.html"><li>FAQ</li> </a> <!--Page pour me contacter-->
+					<li><a href="CV.html" style="color: #fdeef5">Accueil</a> </li> <!--Page d'accueil-->
+					<li><a href="formation.html">Formation </a></li> <!--Page de formation-->
+					<li><a href="exppro.html">Expériences professionnelles </a></li> <!--Page d'expériences pro-->
+					<li><a href="comp.html">Compétences </a></li> <!--Page de compétences-->
+					<li><a href="faq.html">FAQ </a></li> <!--Page pour me contacter-->
 				</ul>
 			</nav>
 		</header>
 		<!--Page d'accueil qui comporte un message de bienvenueet autres-->
-		<section>
-			<p>Page d'accueil</p>
+		<section style="background-image: url(fond.png);background-repeat: no-repeat; margin-left: 300px;">
+			<h1>Bienvenue sur mon CV en ligne</h1>
+			<h2>Quelques vidéos illustrant mes centres d'intérêt : </h2>
+			<div class="container">
+			<h3>Un morceau de piano</h3>
+
+				<iframe class="embed-responsive-item" src="https://youtube.com/embed/Tb9wgI9bASI" width=500  height=400></iframe> 
+
+			<h3>Le taekwondo pour apprendre le self control</h3>
+
+				<iframe class="embed-responsive-item" src="https://youtube.com/embed/ZXLacVdFXGc" width=500  height=400></iframe> 
+
+			</div>
 		</section>
 
 	</main>
